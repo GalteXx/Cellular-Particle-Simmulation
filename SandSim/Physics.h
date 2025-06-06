@@ -12,5 +12,8 @@ public:
 	Vector2 getNormal();
 	Vector2 getNormalizedVector() const;
 	float getLength() const;
-	Vector2 operator+ (Vector2 b);
+	Vector2 operator+ (Vector2& b);
+	Vector2 operator/ (float b);
+	Vector2 operator* (float b);
+	Vector2& operator+= (const Vector2& b);
 };
