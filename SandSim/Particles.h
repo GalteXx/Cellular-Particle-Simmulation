@@ -1,16 +1,12 @@
 #pragma once
-#include "SDL3\SDL_pixels.h"
+#include "Material.h"
 #include "Physics.h"
 class Particle {
 private:
-	float mass;
-	float energyDissipation;
-	Vector2 velocity;
-	SDL_Color color;
+	Material* material;
+	Vector2 velocity = Vector2(0, 0);
 public:
-	SDL_Color getColor();
-	Vector2 getVelocity();
-	float getMass();
-	float getEnergyDissipation();
+	Particle();
+	Vector2 getVelocity() const;
 	void applyForce(Vector2 force);
 };

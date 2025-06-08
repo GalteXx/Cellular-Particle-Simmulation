@@ -131,6 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="Material.cpp" />
     <ClCompile Include="Particles.cpp" />
     <ClCompile Include="SandSim.cpp" />
     <ClCompile Include="Time.cpp" />
@@ -142,6 +144,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="GridRenderer.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="Physics.h" />
     <ClInclude Include="Particles.h" />
     <ClInclude Include="Time.h" />

@@ -1,28 +1,19 @@
 #include "Particles.h"
 #include "Time.h"
 
-SDL_Color Particle::getColor()
+
+Particle::Particle()
 {
-    return color;
+    material = Material();
 }
 
-Vector2 Particle::getVelocity()
+Vector2 Particle::getVelocity() const
 {
     return velocity;
 }
 
-float Particle::getMass()
-{
-    return mass;
-}
-
-float Particle::getEnergyDissipation()
-{
-    return energyDissipation;
-}
-
 void Particle::applyForce(Vector2 force)
 {
-    velocity += force / mass * Time::getDeltaTime();
+    velocity += force / material.getMass() * Time::getDeltaTime();
 }
 
