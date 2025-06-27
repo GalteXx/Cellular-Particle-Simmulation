@@ -1,15 +1,15 @@
 #pragma once
 #include "SDL3/SDL.h"
+#include "Grid.h"
 class GridRenderer{
 private:
+	int cellSize;
 	SDL_Window* window;
 	SDL_Renderer* renderer;
-	int windowWidth;
-	int windowHeight;
+	Grid* simulationGrid;
 
-	
 public:
-	GridRenderer(int wWidth, int wHeight);
+	GridRenderer(int nCellSize, Grid* nSimulationGrid);
 	void Render();
 
 };

@@ -2,10 +2,12 @@
 #include "SDL3/SDL.h"
 class Material {
 private:
-	float mass = 1;
-	float energyDissipation = 0;
-	SDL_Color color = { 0, 0, 0 };
+	float mass;
+	float energyDissipation;
+	SDL_Color color;
 public:
+	Material();
+	Material(float nMass, float nEnegryDissipation, SDL_Color nColor);
 	SDL_Color getColor() const;
 	float getMass() const;
 	float getEnergyDissipation() const;
@@ -20,5 +22,6 @@ class MaterialContainer {
 private:
 	static Material* materials;
 public:
-	Material* getMaterialByIndex();
+	static Material* getMaterial(MaterialType type);
+	static void initializeMaterials();
 };

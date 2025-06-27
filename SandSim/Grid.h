@@ -9,5 +9,5 @@ public:
 	Grid(int w, int h);
 	int getWidth() const;
 	int getHeight() const;
-
+	Particle** getParticleMatrix();
 };

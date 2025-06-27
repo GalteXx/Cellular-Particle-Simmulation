@@ -19,3 +19,8 @@ int Grid::getHeight() const
 {
 	return height;
 }
+
+Particle** Grid::getParticleMatrix()
+{
+	return particleMatrix;
+}
