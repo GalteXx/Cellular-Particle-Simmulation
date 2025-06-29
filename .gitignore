@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 #Ignore SDL dependency
 /SandSim.sln
+/SandSim/SandSim.vcxproj
