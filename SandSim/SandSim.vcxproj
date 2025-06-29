@@ -140,11 +140,6 @@
     <ClCompile Include="Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\GitHub\CppLibs\SDL3-3.2.16\VisualC\SDL\SDL.vcxproj">
-      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Grid.h" />
     <ClInclude Include="GridRenderer.h" />
     <ClInclude Include="Material.h" />
